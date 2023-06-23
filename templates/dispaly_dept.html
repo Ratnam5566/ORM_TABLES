@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a
+        {
+            padding:4px; 
+        }
+        #b
+        {
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>DEPT TABLE</h1>
+        <div calss="a">
+        <table border="4px "  >
+            <tr class="b">
+                <th class="a" id="b">Pk</th>
+                <th class="a">Dname</th>
+                <th class="a">Deptno</th>
+                <th class="a">Loc</th>
+            </tr>
+            {% for DO in De %}
+            <tr>
+                <td class="a">{{DO.pk}}</td>
+                <td class="a">{{DO.Dname}}</td>
+                <td class="a">{{DO.Deptno}}</td>
+                <td class="a">{{DO.Loc}}</td>
+            </tr>
+            {% endfor %}
+        </table></div>
+    </center>
+</body>
+</html>

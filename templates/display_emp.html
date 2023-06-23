@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a
+        {
+            padding:4px; 
+        }
+        #b
+        {
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>EMP TABLE</h1>
+        <div calss="a">
+        <table border="4px "  >
+            <tr class="b">
+                <th class="a" id="b">Pk</th>
+                <th class="a">Eno</th>
+                <th class="a">Ename</th>
+                <th class="a">Deptno</th>
+            </tr>
+            {% for DO in De %}
+            <tr>
+                <td class="a">{{DO.pk}}</td>
+                <td class="a">{{DO.Eno}}</td>
+                <td class="a">{{DO.Ename}}</td>
+                <td class="a">{{DO.Deptno}}</td>
+            </tr>
+            {% endfor %}
+        </table></div>
+    </center>
+</body>
+</html>
