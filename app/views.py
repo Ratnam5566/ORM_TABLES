@@ -25,7 +25,9 @@ def dispaly_dept(request):
     De=Dept.objects.all()
     D={'De':De}
     return render(request,'dispaly_dept.html',D)
+
+
 def dispaly_emp(request):
-    De=Dept.objects.all()
-    D={'De':De}
-    return render(request,'dispaly_emp.html',D)
+    EO=Emp.objects.all()
+    d={'EO':EO}
+    return render(request,'dispaly_emp.html',d)
